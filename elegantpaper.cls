@@ -97,6 +97,7 @@
 \definecolor{lightgrey}{rgb}{0.95,0.95,0.95}
 \definecolor{commentcolor}{RGB}{0,100,0}
 \definecolor{frenchplum}{RGB}{190,20,83}
+\definecolor{darkgrey}{RGB}{105,105,105}
 
 
 % add the email cmd 
@@ -345,6 +346,59 @@
 }
 
 
+%% Caveat, Important and Background box
+\RequirePackage[framemethod=tikz]{mdframed}
 
+\mdfdefinestyle{warn}{% warning style
+  hidealllines=true,leftline=true,
+  skipabove=12,skipbelow=12pt,
+  innertopmargin=0.4em,%
+  innerbottommargin=0.4em,%
+  innerrightmargin=0.7em,%
+  rightmargin=0.7em,%
+  innerleftmargin=1.7em,%
+  leftmargin=0.7em,%
+  middlelinewidth=.2em,%
+  linecolor=winered,
+  fontcolor=winered,,%
+}
 
+\mdfdefinestyle{important}{%
+  hidealllines=true,leftline=true,
+  skipabove=12,skipbelow=12pt,
+  innertopmargin=0.4em,%
+  innerbottommargin=0.4em,%
+  innerrightmargin=0.7em,%
+  rightmargin=0.7em,%
+  innerleftmargin=1.7em,%
+  leftmargin=0.7em,%
+  middlelinewidth=.2em,%
+  linecolor=commentcolor,%
+  fontcolor=commentcolor,%
+}
 
+\mdfdefinestyle{background}{%
+  hidealllines=true,leftline=true,
+  skipabove=12,skipbelow=12pt,
+  innertopmargin=0.4em,%
+  innerbottommargin=0.4em,%
+  innerrightmargin=0.7em,%
+  rightmargin=0.7em,%
+  innerleftmargin=1.7em,%
+  leftmargin=0.7em,%
+  middlelinewidth=.2em,%
+  linecolor=darkgrey,%
+  fontcolor=darkgrey,%
+}
+
+\mdfdefinestyle{info}{%
+  hidealllines=true,leftline=true,
+  skipabove=12,skipbelow=12pt,
+  innertopmargin=0.4em,%
+  innerbottommargin=0.4em,%
+  innerrightmargin=0.7em,%
+  rightmargin=0.7em,%
+  innerleftmargin=1.7em,%
+  leftmargin=0.7em,%
+  middlelinewidth=.2em,%
+}

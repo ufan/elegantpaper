@@ -26,7 +26,6 @@ This documentation illustrates the usage of the \href{https://github.com/Elegant
 \section{Introduction}
 
 This template is based on the standard \LaTeX{} article class, hence the arguments of article class are acceptable (\lstinline{a4paper}, \lstinline{10pt} and etc.). Alternative engines are \hologo{pdfLaTeX} and \hologo{XeLaTeX}.
-
 \begin{lstlisting}
 \documentclass[a4paper,11pt]{elegantpaper}
 \end{lstlisting}
@@ -215,5 +214,50 @@ The reason is that the template redefines font for math so that no new math font
 %%% use esvect pkg, uncomment following code
 % \RequirePackage{esvect}
 \end{lstlisting}
+
+\subsection{Test}
+TIt can be useful to have an unnumbered theorem-like environment to add remarks, comments or examples to a mathematical document. The amsthm package provides this functionality. heorems can easily be defined:
+
+TIt can be useful to have an unnumbered theorem-like environment to add remarks, comments or examples to a mathematical document. The amsthm package provides this functionality. heorems can easily be defined:
+
+\begin{mdframed}[style=background]
+  Given two line segments whose lengths are \(a\) and \(b\) respectively there is a 
+  real number \(r\) such that \(b=ra\).
+  To prove it by contradiction try and assume that the statement is false,
+  proceed from there and at some point you will arrive to a contradiction.
+  Let \(f\) be a function whose derivative exists in every point, then \(f\) 
+  is a continuous function.
+  The reason is that the template redefines font for math so that no new math font is allowed to be added. To use \lstinline{yhmath} and/or \lstinline{esvect}, please locate \lstinline{yhmath} or \lstinline{esvect} in \lstinline{elegantpaper.cls}, uncomment corresponding related code.
+\end{mdframed}
+\begin{mdframed}[style=important]
+    Given two line segments whose lengths are \(a\) and \(b\) respectively there is a 
+    real number \(r\) such that \(b=ra\).
+    To prove it by contradiction try and assume that the statement is false,
+    proceed from there and at some point you will arrive to a contradiction.
+    Let \(f\) be a function whose derivative exists in every point, then \(f\) 
+    is a continuous function.
+    The reason is that the template redefines font for math so that no new math font is allowed to be added. To use \lstinline{yhmath} and/or \lstinline{esvect}, please locate \lstinline{yhmath} or \lstinline{esvect} in \lstinline{elegantpaper.cls}, uncomment corresponding related code.
+\end{mdframed}
+
+\begin{mdframed}[style=warn]
+  Given two line segments whose lengths are \(a\) and \(b\) respectively there is a 
+  real number \(r\) such that \(b=ra\).
+  To prove it by contradiction try and assume that the statement is false,
+  proceed from there and at some point you will arrive to a contradiction.
+  Let \(f\) be a function whose derivative exists in every point, then \(f\) 
+  is a continuous function.
+  The reason is that the template redefines font for math so that no new math font is allowed to be added. To use \lstinline{yhmath} and/or \lstinline{esvect}, please locate \lstinline{yhmath} or \lstinline{esvect} in \lstinline{elegantpaper.cls}, uncomment corresponding related code.
+\end{mdframed}
+
+
+\begin{mdframed}[style=info]
+    Given two line segments whose lengths are \(a\) and \(b\) respectively there is a 
+    real number \(r\) such that \(b=ra\).
+    To prove it by contradiction try and assume that the statement is false,
+    proceed from there and at some point you will arrive to a contradiction.
+    Let \(f\) be a function whose derivative exists in every point, then \(f\) 
+    is a continuous function.
+    The reason is that the template redefines font for math so that no new math font is allowed to be added. To use \lstinline{yhmath} and/or \lstinline{esvect}, please locate \lstinline{yhmath} or \lstinline{esvect} in \lstinline{elegantpaper.cls}, uncomment corresponding related code.
+  \end{mdframed}
 
 \end{document}
